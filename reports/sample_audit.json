@@ -1,0 +1,67 @@
+{
+  "report_metadata": {
+    "application": "Sentinel Password Auditor",
+    "version": "1.0.0",
+    "generated_at": "2026-11-20T13:58:08.046639+00:00",
+    "format": "JSON",
+    "security_notice": "This report has been automatically sanitized. No plaintext passwords or raw cryptographic hashes are stored or displayed."
+  },
+  "audit_summary": {
+    "audit_type": "windows",
+    "timestamp": "2026-11-20T13:58:07.930320+00:00",
+    "os_info": {
+      "system": "Windows",
+      "release": "11",
+      "version": "10.0.26300",
+      "machine": "AMD64",
+      "hostname": "DESKTOP-RO31FS5"
+    },
+    "statistics": {
+      "total_accounts": 4,
+      "weak_accounts": 2,
+      "strong_accounts": 2,
+      "locked_accounts": 0,
+      "error_accounts": 0,
+      "unsupported_accounts": 0
+    },
+    "error_message": null
+  },
+  "account_findings": [
+    {
+      "username": "alice",
+      "algorithm": "NTLM",
+      "status": "WEAK_PASSWORD",
+      "is_weak": true,
+      "recommendation": "Password for 'alice' was found in the dictionary. Change it immediately to a strong, unique password.",
+      "audit_type": "windows",
+      "timestamp": "2026-11-20T13:58:07.897138+00:00"
+    },
+    {
+      "username": "bob",
+      "algorithm": "NTLM",
+      "status": "STRONG_PASSWORD",
+      "is_weak": false,
+      "recommendation": "Password for 'bob' was not found in the dictionary. Continue using strong password practices.",
+      "audit_type": "windows",
+      "timestamp": "2026-11-20T13:58:07.897150+00:00"
+    },
+    {
+      "username": "charlie",
+      "algorithm": "NTLM",
+      "status": "STRONG_PASSWORD",
+      "is_weak": false,
+      "recommendation": "Password for 'charlie' was not found in the dictionary. Continue using strong password practices.",
+      "audit_type": "windows",
+      "timestamp": "2026-11-20T13:58:07.897155+00:00"
+    },
+    {
+      "username": "admin",
+      "algorithm": "NTLM",
+      "status": "WEAK_PASSWORD",
+      "is_weak": true,
+      "recommendation": "Password for 'admin' was found in the dictionary. Change it immediately to a strong, unique password.",
+      "audit_type": "windows",
+      "timestamp": "2026-11-20T13:58:07.897184+00:00"
+    }
+  ]
+}
